@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<script>
+
+    function printOut(){
+        document.getElementById("Pink").innerHTML = " This is my first JavaScipt code"
+
+    }
+
+    function myValue(){
+        let x = 0;
+        x = parseInt(document.getElementById("purple").value); 
+        document.getElementById("navy").innerHTML = x*2;
+    }
+
+    function calcAverage(){
+        let num1 = parseInt(document.getElementById("num1").value);
+        let num2 = parseInt(document.getElementById("num2").value);
+        let avg = (num1 + num2) /2;
+        document.getElementById("avgResult").innerHTML = avg;
+    }
+</script>
+
+<body>
+
+    <p id = "Pink"> What is my experience </p>
+    <button onclick=" printOut()"> Answer </button>
+    <hr>
+
+    <p id="navy"></p>
+    <input id = "purple">
+    <br> <br> <button onclick="myValue()"> Calculate </button>
+    <hr>
+
+    <p id="avgResult"></p>
+    <input id="num1"> <input id="num2"> <button onclick="calcAverage()"> Calculate Average </button>
+
+</body>
+
+</html>
